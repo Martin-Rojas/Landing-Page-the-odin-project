@@ -16,7 +16,7 @@ a {
 .header {
   /* border: 1px solid black; */
   width: 100%;
-  height: 525px;
+  height: 500px;
   background-color: #1f2937;
   margin-bottom: 20px;
   display: flex;
@@ -27,37 +27,34 @@ a {
 }
 
 .header-top {
-  border: 3px solid white; 
+  border: 2px dashed red;
+  background-color: #1f2937;
   position: fixed;
   top: 5%;
-  right: 10%;
-  left: 10%;
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-shrink: 1;
+
 }
 
 .header-bottom {
-  border: 3px solid white;
   width: 80%;
   display: flex;
   justify-content: space-around;
 }
 
-.img-container {
-  width: 350px;
-}
-
 .header img {
+  box-shadow: rgba(253, 253, 253, 0.35) 0px 5px 15px;
   width: 50px;
   height: 60px;
   border-radius: 30%;
-  margin-left: 2.5px;
+  margin-left: 50px;
 }
 
 .header ul {
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   align-items: center;
   width: 350px;
 }
@@ -68,7 +65,7 @@ a {
 }
 
 .left-side-section1 {
-  width: 350px;
+  width: 450px;
   padding: 10px;
 }
 
@@ -81,7 +78,7 @@ a {
 
 .left-side-section1 p {
   color: #e5e7eb;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .left-side-section1 button {
@@ -94,8 +91,39 @@ a {
 }
 
 .right-side-section1 img {
-  width: 350px;
-  height: 200px;
+  /* border: 2px solid red ; */
+  width: 450px;
+  height: auto;
   margin-top: 2%;
   margin-left: 10%;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+/* --------------------------------------Second section--------------------------------- */
+
+.second-section {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.image-container {
+  border: 2px solid red;
+  max-width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.image-container .image-card {
+  width: 250px;
+  height: 350px;
+  margin: 15px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 12px;
 }
